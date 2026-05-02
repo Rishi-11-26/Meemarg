@@ -64,7 +64,11 @@
         "is_revenue",
         "description_simple",
         "submission_modes",
-        "priority_rank"
+        "priority_rank",
+        "steps",
+        "important_notes",
+        "fee_breakdown",
+        "source_verification"
       ],
       "properties": {
         "service_id": {
@@ -204,6 +208,100 @@
           "maximum": 30,
           "description": "Usage frequency ranking (1 = most used)"
         },
+        "steps": {
+          "type": "object",
+          "required": ["en", "te"],
+          "properties": {
+            "en": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 10
+              },
+              "description": "Step-by-step application process in English"
+            },
+            "te": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 5
+              },
+              "description": "Step-by-step application process in Telugu"
+            }
+          }
+        },
+        "important_notes": {
+          "type": "object",
+          "required": ["en", "te"],
+          "properties": {
+            "en": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "string",
+                "minLength": 10
+              },
+              "description": "Important notes and tips in English"
+            },
+            "te": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "string",
+                "minLength": 5
+              },
+              "description": "Important notes and tips in Telugu"
+            }
+          }
+        },
+        "fee_breakdown": {
+          "type": "object",
+          "required": ["service_fee", "meeseva_charge", "total"],
+          "properties": {
+            "service_fee": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Base service fee in rupees"
+            },
+            "meeseva_charge": {
+              "type": "number",
+              "minimum": 0,
+              "description": "MeeSeva processing charge in rupees"
+            },
+            "total": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Total fee (service + meeseva)"
+            }
+          }
+        },
+        "source_verification": {
+          "type": "object",
+          "required": ["source", "last_verified"],
+          "properties": {
+            "source": {
+              "type": "string",
+              "enum": ["MeeSeva Portal", "Official Department Website", "Government Gazette", "MeeSeva Center"],
+              "description": "Official source of information"
+            },
+            "last_verified": {
+              "type": "string",
+              "format": "date",
+              "description": "Date when information was last verified (YYYY-MM-DD)"
+            },
+            "verification_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL to official source (optional)"
+            }
+          }
+        },
         "related_services": {
           "type": "array",
           "items": {
@@ -242,3 +340,4 @@
     }
   }
 }
+
