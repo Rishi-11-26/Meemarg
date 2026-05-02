@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-02T06:18:29.331455Z",
+    "version": "2.0.0",
+    "last_updated": "2026-05-02T12:27:00Z",
     "total_services": 20,
     "rate_revision_date": "2026-04-01",
     "data_source": "Telangana State Portal & Official Gazette"
@@ -10,50 +10,72 @@
     {
       "service_id": "REV-001",
       "name": {
-        "en": "Encumbrance Certificate",
-        "te": "భారము లేని ధృవీకరణ పత్రం"
+        "en": "Income Certificate",
+        "te": "ఆదాయ ధృవీకరణ పత్రం"
       },
       "department": "Revenue",
       "category": "A",
       "keywords": [
-        "EC",
-        "encumbrance",
-        "property",
-        "land",
+        "income",
         "certificate",
-        "no dues",
-        "భారము",
-        "సర్టిఫికేట్"
+        "salary",
+        "revenue",
+        "ఆదాయం"
       ],
-      "fee": 65,
+      "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
       "required_documents": [
         {
           "name": {
-            "en": "Property Document",
-            "te": "ఆస్తి పత్రం"
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
           },
           "type": "copy",
-          "mandatory": true
+          "mandatory": true,
+          "example": "All family members"
         },
         {
           "name": {
-            "en": "Applicant ID Proof",
-            "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"
+            "en": "Ration Card",
+            "te": "రేషన్ కార్డు"
           },
-          "type": "self_attested",
-          "mandatory": true
+          "type": "copy",
+          "mandatory": true,
+          "example": "Latest ration card"
+        },
+        {
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true,
+          "example": "Electricity bill / Rental agreement"
+        },
+        {
+          "name": {
+            "en": "Salary Slips / Income Proof",
+            "te": "జీతం స్లిప్స్ / ఆదాయ రుజువు"
+          },
+          "type": "copy",
+          "mandatory": false,
+          "example": "Last 3 months for salaried persons"
         }
       ],
-      "processing_time": "Instant",
+      "processing_time": "7-10 Days",
       "is_revenue": true,
       "description_simple": {
-        "en": "Certificate showing property is free from legal or monetary liabilities. Required for property transactions.",
-        "te": "ఆస్తి చట్టపరమైన లేదా ద్రవ్య బాధ్యతల నుండి విముక్తమని చూపించే ధృవీకరణ పత్రం."
+        "en": "Official certificate stating your annual family income, required for educational admissions, scholarships, and government schemes.",
+        "te": "మీ వార్షిక కుటుంబ ఆదాయాన్ని తెలియజేసే అధికారిక ధృవీకరణ పత్రం, విద్యా ప్రవేశాలు, స్కాలర్‌షిప్‌లు మరియు ప్రభుత్వ పథకాలకు అవసరం."
       },
       "submission_modes": {
         "online": {
           "available": true,
-          "portal_url": "https://registration.telangana.gov.in",
+          "portal_url": "https://meeseva.telangana.gov.in",
           "requires_digital_signature": false
         },
         "meeseva_center": {
@@ -62,125 +84,51 @@
           "stamp_value": 2
         }
       },
+      "steps": {
+        "en": [
+          "Visit MeeSeva center or official website (meeseva.telangana.gov.in)",
+          "Select 'Income Certificate' service",
+          "Fill in required details (name, address, income details)",
+          "Upload all required documents (Aadhaar, Ration Card, Address Proof)",
+          "Pay the required fee of ₹62 (₹2 court stamp if at MeeSeva center)",
+          "Receive acknowledgement receipt and track application status online"
+        ],
+        "te": [
+          "మీసేవా కేంద్రం లేదా అధికారిక వెబ్‌సైట్‌ను సందర్శించండి",
+          "'ఆదాయ ధృవీకరణ పత్రం' సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "అవసరమైన పత్రాలను అప్‌లోడ్ చేయండి",
+          "అవసరమైన రుసుము చెల్లించండి",
+          "రసీదు స్వీకరించి ఆన్‌లైన్‌లో స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all names match exactly with Aadhaar card",
+          "Carry original documents to MeeSeva center for verification",
+          "Double-check uploaded files are clear and readable",
+          "Income details should be accurate and verifiable"
+        ],
+        "te": [
+          "అన్ని పేర్లు ఆధార్ కార్డుతో సరిగ్గా సరిపోలాలి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "అప్‌లోడ్ చేసిన ఫైల్స్ స్పష్టంగా ఉన్నాయో తనిఖీ చేయండి",
+          "ఆదాయ వివరాలు ఖచ్చితమైనవి మరియు ధృవీకరించదగినవి అయి ఉండాలి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01",
+        "verification_url": "https://meeseva.telangana.gov.in"
+      },
       "priority_rank": 1,
       "related_services": [
-        "REV-002"
+        "REV-002",
+        "REV-003"
       ]
     },
     {
       "service_id": "REV-002",
-      "name": {
-        "en": "Birth Certificate",
-        "te": "జనన ధృవీకరణ పత్రం"
-      },
-      "department": "Revenue",
-      "category": "A",
-      "keywords": [
-        "birth",
-        "birth certificate",
-        "newborn",
-        "registration",
-        "జననం",
-        "పుట్టిన తేదీ"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Hospital Discharge Summary",
-            "te": "ఆసుపత్రి డిశ్చార్జ్ సారాంశం"
-          },
-          "type": "original",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Parents Aadhar Cards",
-            "te": "తల్లిదండ్రుల ఆధార్ కార్డులు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "1-3 Days",
-      "is_revenue": true,
-      "description_simple": {
-        "en": "Official birth registration certificate required for school admissions and passport applications.",
-        "te": "పాఠశాల ప్రవేశాలు మరియు పాస్‌పోర్ట్ దరఖాస్తుల కోసం అవసరమైన అధికారిక జనన నమోదు ధృవీకరణ పత్రం."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://meeseva.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": true,
-          "stamp_value": 2
-        }
-      },
-      "priority_rank": 2,
-      "related_services": [
-        "REV-001"
-      ]
-    },
-    {
-      "service_id": "REV-003",
-      "name": {
-        "en": "Death Certificate",
-        "te": "మరణ ధృవీకరణ పత్రం"
-      },
-      "department": "Revenue",
-      "category": "A",
-      "keywords": [
-        "death",
-        "death certificate",
-        "మరణం",
-        "మరణ సర్టిఫికేట్"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Hospital Death Summary",
-            "te": "ఆసుపత్రి మరణ సారాంశం"
-          },
-          "type": "original",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Applicant ID Proof",
-            "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "1-3 Days",
-      "is_revenue": true,
-      "description_simple": {
-        "en": "Official death registration certificate required for legal and insurance purposes.",
-        "te": "చట్టపరమైన మరియు బీమా ప్రయోజనాల కోసం అవసరమైన అధికారిక మరణ నమోదు ధృవీకరణ పత్రం."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://meeseva.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": true,
-          "stamp_value": 2
-        }
-      },
-      "priority_rank": 3,
-      "related_services": []
-    },
-    {
-      "service_id": "REV-004",
       "name": {
         "en": "Caste Certificate",
         "te": "కులం ధృవీకరణ పత్రం"
@@ -189,36 +137,61 @@
       "category": "A",
       "keywords": [
         "caste",
-        "SC",
-        "ST",
-        "BC",
-        "కులం",
-        "కుల సర్టిఫికేట్"
+        "certificate",
+        "sc",
+        "st",
+        "bc",
+        "కులం"
       ],
       "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
       "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true,
+          "example": "Applicant's Aadhaar"
+        },
         {
           "name": {
             "en": "Parent's Caste Certificate",
-            "te": "తల్లిదండ్రుల కుల సర్టిఫికేట్"
+            "te": "తల్లిదండ్రుల కులం ధృవీకరణ పత్రం"
           },
           "type": "copy",
-          "mandatory": true
+          "mandatory": true,
+          "example": "Father's or Mother's original caste certificate"
         },
         {
           "name": {
-            "en": "Aadhar Card",
-            "te": "ఆధార్ కార్డు"
+            "en": "School Certificate (10th class)",
+            "te": "పాఠశాల ధృవీకరణ పత్రం"
           },
-          "type": "self_attested",
-          "mandatory": true
+          "type": "copy",
+          "mandatory": true,
+          "example": "SSC certificate showing caste"
+        },
+        {
+          "name": {
+            "en": "Residence Proof",
+            "te": "నివాస రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true,
+          "example": "Electricity bill / Ration card"
         }
       ],
-      "processing_time": "7-15 Days",
+      "processing_time": "15-20 Days",
       "is_revenue": true,
       "description_simple": {
-        "en": "Certificate verifying caste status for educational and employment reservations.",
-        "te": "విద్యా మరియు ఉద్యోగ రిజర్వేషన్ల కోసం కుల స్థితిని ధృవీకరించే ధృవీకరణ పత్రం."
+        "en": "Official certificate confirming your caste category (SC/ST/BC/EBC), required for educational reservations, government jobs, and welfare schemes.",
+        "te": "మీ కులం వర్గాన్ని (SC/ST/BC/EBC) ధృవీకరించే అధికారిక పత్రం, విద్యా రిజర్వేషన్లు, ప్రభుత్వ ఉద్యోగాలు మరియు సంక్షేమ పథకాలకు అవసరం."
       },
       "submission_modes": {
         "online": {
@@ -232,207 +205,118 @@
           "stamp_value": 2
         }
       },
-      "priority_rank": 4,
-      "related_services": []
-    },
-    {
-      "service_id": "REV-005",
-      "name": {
-        "en": "Income Certificate",
-        "te": "ఆదాయ ధృవీకరణ పత్రం"
+      "steps": {
+        "en": [
+          "Visit MeeSeva center or go to meeseva.telangana.gov.in",
+          "Select 'Caste Certificate' under Revenue services",
+          "Fill application form with personal and family details",
+          "Upload parent's caste certificate and other required documents",
+          "Pay ₹62 fee (bring ₹2 court stamp if applying at MeeSeva center)",
+          "Submit application and save acknowledgement number for tracking"
+        ],
+        "te": [
+          "మీసేవా కేంద్రం లేదా వెబ్‌సైట్‌ను సందర్శించండి",
+          "రెవిన్యూ సేవల క్రింద 'కులం ధృవీకరణ పత్రం' ఎంచుకోండి",
+          "వ్యక్తిగత మరియు కుటుంబ వివరాలతో దరఖాస్తు ఫారమ్ నింపండి",
+          "తల్లిదండ్రుల కులం ధృవీకరణ పత్రం మరియు ఇతర పత్రాలను అప్‌లోడ్ చేయండి",
+          "₹10 రుసుము చెల్లించండి",
+          "దరఖాస్తును సమర్పించి రసీదు సంఖ్యను భద్రపరచండి"
+        ]
       },
-      "department": "Revenue",
-      "category": "A",
-      "keywords": [
-        "income",
-        "income certificate",
-        "ఆదాయం",
-        "ఆదాయ సర్టిఫికేట్"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Salary Slips / Income Proof",
-            "te": "జీతం స్లిప్పులు / ఆదాయ రుజువు"
-          },
-          "type": "copy",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Aadhar Card",
-            "te": "ఆధార్ కార్డు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "7-15 Days",
-      "is_revenue": true,
-      "description_simple": {
-        "en": "Certificate stating annual family income for scholarships and government schemes.",
-        "te": "స్కాలర్‌షిప్‌లు మరియు ప్రభుత్వ పథకాల కోసం వార్షిక కుటుంబ ఆదాయాన్ని తెలిపే ధృవీకరణ పత్రం."
+      "important_notes": {
+        "en": [
+          "Parent's caste certificate is mandatory - ensure it's valid",
+          "Name spelling must match across all documents",
+          "Processing may take longer during peak admission season",
+          "Keep digital and physical copies of all submitted documents"
+        ],
+        "te": [
+          "తల్లిదండ్రుల కులం ధృవీకరణ పత్రం తప్పనిసరి - చెల్లుబాటు అయ్యేదో నిర్ధారించుకోండి",
+          "పేరు స్పెల్లింగ్ అన్ని పత్రాలలో సరిపోలాలి",
+          "ప్రాసెసింగ్ పీక్ అడ్మిషన్ సీజన్‌లో ఎక్కువ సమయం పట్టవచ్చు",
+          "సమర్పించిన అన్ని పత్రాల డిజిటల్ మరియు ఫిజికల్ కాపీలను భద్రపరచండి"
+        ]
       },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://meeseva.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": true,
-          "stamp_value": 2
-        }
+      "source_verification": {
+        "source": "Official Department Website",
+        "last_verified": "2026-04-28",
+        "verification_url": "https://revenue.telangana.gov.in"
       },
-      "priority_rank": 5,
-      "related_services": []
+      "priority_rank": 2,
+      "related_services": [
+        "REV-001",
+        "REV-003"
+      ]
     },
     {
       "service_id": "MUN-001",
       "name": {
-        "en": "Property Tax Payment",
-        "te": "ఆస్తి పన్ను చెల్లింపు"
-      },
-      "department": "Municipal",
-      "category": "A",
-      "keywords": [
-        "property tax",
-        "house tax",
-        "municipal tax",
-        "GHMC",
-        "ఆస్తి పన్ను"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Property Tax Assessment Number",
-            "te": "ఆస్తి పన్ను అంచనా సంఖ్య"
-          },
-          "type": "digital",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "Instant",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Annual property tax payment for residential and commercial properties in municipal limits.",
-        "te": "మునిసిపల్ పరిమితుల్లో నివాస మరియు వాణిజ్య ఆస్తుల కోసం వార్షిక ఆస్తి పన్ను చెల్లింపు."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://ghmc.gov.in/propertytax",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 6,
-      "related_services": []
-    },
-    {
-      "service_id": "MUN-002",
-      "name": {
-        "en": "Trade License",
-        "te": "వాణిజ్య లైసెన్స్"
+        "en": "Birth Certificate",
+        "te": "జనన ధృవీకరణ పత్రం"
       },
       "department": "Municipal",
       "category": "B",
       "keywords": [
-        "trade license",
-        "business license",
-        "వాణిజ్య లైసెన్స్",
-        "వ్యాపార లైసెన్స్"
+        "birth",
+        "certificate",
+        "newborn",
+        "baby",
+        "జననం"
       ],
       "fee": 80,
+      "fee_breakdown": {
+        "service_fee": 65,
+        "meeseva_charge": 15,
+        "total": 80
+      },
       "required_documents": [
         {
           "name": {
-            "en": "Shop/Establishment Proof",
-            "te": "దుకాణం/స్థాపన రుజువు"
-          },
-          "type": "copy",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Owner ID Proof",
-            "te": "యజమాని గుర్తింపు రుజువు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "15-30 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "License required to operate commercial establishments and businesses.",
-        "te": "వాణిజ్య స్థాపనలు మరియు వ్యాపారాలను నిర్వహించడానికి అవసరమైన లైసెన్స్."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://ghmc.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 7,
-      "related_services": []
-    },
-    {
-      "service_id": "MUN-003",
-      "name": {
-        "en": "Building Permission",
-        "te": "భవన అనుమతి"
-      },
-      "department": "Municipal",
-      "category": "B",
-      "keywords": [
-        "building permission",
-        "construction",
-        "భవన అనుమతి",
-        "నిర్మాణం"
-      ],
-      "fee": 80,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Site Plan",
-            "te": "స్థల ప్రణాళిక"
+            "en": "Hospital Discharge Summary",
+            "te": "ఆసుపత్రి డిశ్చార్జ్ సారాంశం"
           },
           "type": "original",
-          "mandatory": true
+          "mandatory": true,
+          "example": "Original discharge certificate from hospital"
         },
         {
           "name": {
-            "en": "Property Documents",
-            "te": "ఆస్తి పత్రాలు"
+            "en": "Parent's Aadhaar Cards",
+            "te": "తల్లిదండ్రుల ఆధార్ కార్డులు"
           },
           "type": "copy",
-          "mandatory": true
+          "mandatory": true,
+          "example": "Both father's and mother's Aadhaar"
+        },
+        {
+          "name": {
+            "en": "Marriage Certificate",
+            "te": "వివాహ ధృవీకరణ పత్రం"
+          },
+          "type": "copy",
+          "mandatory": false,
+          "example": "If available"
+        },
+        {
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true,
+          "example": "Electricity bill / Ration card"
         }
       ],
-      "processing_time": "30-60 Days",
+      "processing_time": "3-5 Days",
       "is_revenue": false,
       "description_simple": {
-        "en": "Permission required for new construction or major renovations.",
-        "te": "కొత్త నిర్మాణం లేదా ప్రధాన పునర్నిర్మాణాలకు అవసరమైన అనుమతి."
+        "en": "Official birth registration certificate for newborns, essential for school admissions, passport applications, and legal identity proof.",
+        "te": "నవజాత శిశువుల కోసం అధికారిక జనన నమోదు ధృవీకరణ పత్రం, పాఠశాల ప్రవేశాలు, పాస్‌పోర్ట్ దరఖాస్తులు మరియు చట్టపరమైన గుర్తింపు రుజువు కోసం అవసరం."
       },
       "submission_modes": {
         "online": {
           "available": true,
-          "portal_url": "https://ghmc.gov.in",
+          "portal_url": "https://meeseva.telangana.gov.in",
           "requires_digital_signature": false
         },
         "meeseva_center": {
@@ -441,106 +325,203 @@
           "stamp_value": 0
         }
       },
-      "priority_rank": 8,
+      "steps": {
+        "en": [
+          "Visit MeeSeva center or access meeseva.telangana.gov.in",
+          "Select 'Birth Certificate' under Municipal services",
+          "Enter child's details (name, date of birth, place of birth)",
+          "Upload hospital discharge summary and parent's documents",
+          "Pay ₹80 processing fee",
+          "Receive acknowledgement and track status - certificate ready in 3-5 days"
+        ],
+        "te": [
+          "మీసేవా కేంద్రం లేదా వెబ్‌సైట్‌ను సందర్శించండి",
+          "మునిసిపల్ సేవల క్రింద 'జనన ధృవీకరణ పత్రం' ఎంచుకోండి",
+          "పిల్లల వివరాలను నమోదు చేయండి",
+          "ఆసుపత్రి డిశ్చార్జ్ సారాంశం మరియు తల్లిదండ్రుల పత్రాలను అప్‌లోడ్ చేయండి",
+          "₹5 ప్రాసెసింగ్ రుసుము చెల్లించండి",
+          "రసీదు స్వీకరించి స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Apply within 21 days of birth for free registration",
+          "Late registration (after 1 year) requires additional documentation",
+          "Child's name should be finalized before applying",
+          "Keep hospital discharge summary safe - it's the primary proof"
+        ],
+        "te": [
+          "ఉచిత నమోదు కోసం జననం తర్వాత 21 రోజులలోపు దరఖాస్తు చేయండి",
+          "ఆలస్యంగా నమోదు (1 సంవత్సరం తర్వాత) అదనపు పత్రాలు అవసరం",
+          "దరఖాస్తు చేసే ముందు పిల్లల పేరును ఖరారు చేయాలి",
+          "ఆసుపత్రి డిశ్చార్జ్ సారాంశాన్ని సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01",
+        "verification_url": "https://meeseva.telangana.gov.in"
+      },
+      "priority_rank": 3,
       "related_services": []
     },
     {
-      "service_id": "MUN-004",
+      "service_id": "REV-003",
       "name": {
-        "en": "Water Connection",
-        "te": "నీటి కనెక్షన్"
+        "en": "Residence Certificate",
+        "te": "నివాస ధృవీకరణ పత్రం"
       },
-      "department": "Municipal",
+      "department": "Revenue",
       "category": "A",
       "keywords": [
-        "water connection",
-        "water supply",
-        "నీటి కనెక్షన్",
-        "నీటి సరఫరా"
+        "residence",
+        "domicile",
+        "address",
+        "నివాసం"
       ],
       "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
       "required_documents": [
         {
           "name": {
-            "en": "Property Tax Receipt",
-            "te": "ఆస్తి పన్ను రసీదు"
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
           },
           "type": "copy",
           "mandatory": true
         },
         {
           "name": {
-            "en": "Owner ID Proof",
-            "te": "యజమాని గుర్తింపు రుజువు"
+            "en": "Electricity Bill",
+            "te": "విద్యుత్ బిల్లు"
           },
-          "type": "self_attested",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "15-30 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "New water connection for residential and commercial properties.",
-        "te": "నివాస మరియు వాణిజ్య ఆస్తుల కోసం కొత్త నీటి కనెక్షన్."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://hmwssb.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 9,
-      "related_services": []
-    },
-    {
-      "service_id": "TRA-001",
-      "name": {
-        "en": "Driving License Renewal",
-        "te": "డ్రైవింగ్ లైసెన్స్ పునరుద్ధరణ"
-      },
-      "department": "Transport",
-      "category": "A",
-      "keywords": [
-        "driving license",
-        "DL renewal",
-        "license renewal",
-        "డ్రైవింగ్ లైసెన్స్"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Existing Driving License",
-            "te": "ఇప్పటికే ఉన్న డ్రైవింగ్ లైసెన్స్"
-          },
-          "type": "original",
+          "type": "copy",
           "mandatory": true
         },
         {
           "name": {
-            "en": "Medical Certificate",
-            "te": "వైద్య ధృవీకరణ పత్రం"
+            "en": "Ration Card",
+            "te": "రేషన్ కార్డు"
           },
-          "type": "original",
+          "type": "copy",
           "mandatory": true
         }
       ],
       "processing_time": "7-10 Days",
-      "is_revenue": false,
+      "is_revenue": true,
       "description_simple": {
-        "en": "Renewal of expired or expiring driving license for continued legal driving.",
-        "te": "నిరంతర చట్టబద్ధ డ్రైవింగ్ కోసం గడువు ముగిసిన లేదా గడువు ముగియబోతున్న డ్రైవింగ్ లైసెన్స్ పునరుద్ధరణ."
+        "en": "Certificate proving your residence in Telangana, required for admissions, jobs, and government schemes.",
+        "te": "తెలంగాణలో మీ నివాసాన్ని రుజువు చేసే ధృవీకరణ పత్రం."
       },
       "submission_modes": {
         "online": {
           "available": true,
-          "portal_url": "https://parivahan.gov.in/parivahan",
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Residence Certificate' service",
+          "Fill in current address details",
+          "Upload address proof documents",
+          "Pay ₹62 fee",
+          "Track application status online"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "నివాస ధృవీకరణ పత్రం సేవను ఎంచుకోండి",
+          "ప్రస్తుత చిరునామా వివరాలను నింపండి",
+          "చిరునామా రుజువు పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Address must match across all documents",
+          "Minimum 1 year residence proof may be required",
+          "Utility bills should be recent",
+          "Original documents needed for verification"
+        ],
+        "te": [
+          "చిరునామా అన్ని పత్రాలలో సరిపోలాలి",
+          "కనీసం 1 సంవత్సరం నివాస రుజువు అవసరం",
+          "యుటిలిటీ బిల్లులు ఇటీవలివి అయి ఉండాలి",
+          "ధృవీకరణ కోసం అసలు పత్రాలు అవసరం"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 4
+    },
+    {
+      "service_id": "MUN-002",
+      "name": {
+        "en": "Death Certificate",
+        "te": "మరణ ధృవీకరణ పత్రం"
+      },
+      "department": "Municipal",
+      "category": "B",
+      "keywords": [
+        "death",
+        "certificate",
+        "మరణం"
+      ],
+      "fee": 80,
+      "fee_breakdown": {
+        "service_fee": 65,
+        "meeseva_charge": 15,
+        "total": 80
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Hospital Death Certificate",
+            "te": "ఆసుపత్రి మరణ ధృవీకరణ పత్రం"
+          },
+          "type": "original",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Deceased's Aadhaar",
+            "te": "మరణించిన వ్యక్తి ఆధార్"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Applicant's ID Proof",
+            "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "3-5 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Official death registration certificate required for legal procedures, insurance claims, and property matters.",
+        "te": "చట్టపరమైన విధానాలు, బీమా క్లెయిమ్‌లు మరియు ఆస్తి విషయాలకు అవసరమైన అధికారిక మరణ నమోదు ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
           "requires_digital_signature": false
         },
         "meeseva_center": {
@@ -549,29 +530,171 @@
           "stamp_value": 0
         }
       },
-      "priority_rank": 10,
-      "related_services": []
+      "steps": {
+        "en": [
+          "Visit MeeSeva center or portal",
+          "Select 'Death Certificate' service",
+          "Enter deceased person's details",
+          "Upload hospital death certificate",
+          "Pay ₹80 fee",
+          "Receive certificate in 3-5 days"
+        ],
+        "te": [
+          "మీసేవా కేంద్రం లేదా పోర్టల్‌ను సందర్శించండి",
+          "మరణ ధృవీకరణ పత్రం సేవను ఎంచుకోండి",
+          "మరణించిన వ్యక్తి వివరాలను నమోదు చేయండి",
+          "ఆసుపత్రి మరణ ధృవీకరణ పత్రాన్ని అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "3-5 రోజులలో ధృవీకరణ పత్రం స్వీకరించండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Apply within 21 days for free registration",
+          "Hospital certificate is mandatory",
+          "Applicant must be a close relative",
+          "Required for insurance and legal matters"
+        ],
+        "te": [
+          "ఉచిత నమోదు కోసం 21 రోజులలోపు దరఖాస్తు చేయండి",
+          "ఆసుపత్రి ధృవీకరణ పత్రం తప్పనిసరి",
+          "దరఖాస్తుదారు సన్నిహిత బంధువు అయి ఉండాలి",
+          "బీమా మరియు చట్టపరమైన విషయాలకు అవసరం"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 5
     },
     {
-      "service_id": "TRA-002",
+      "service_id": "REV-004",
       "name": {
-        "en": "Learner's License",
-        "te": "లెర్నర్స్ లైసెన్స్"
+        "en": "OBC Certificate",
+        "te": "OBC ధృవీకరణ పత్రం"
       },
-      "department": "Transport",
+      "department": "Revenue",
       "category": "A",
       "keywords": [
-        "learner license",
-        "LL",
-        "learning license",
-        "లెర్నర్స్ లైసెన్స్"
+        "obc",
+        "backward",
+        "class",
+        "certificate"
       ],
       "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
       "required_documents": [
         {
           "name": {
-            "en": "Age Proof",
-            "te": "వయస్సు రుజువు"
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Parent's OBC Certificate",
+            "te": "తల్లిదండ్రుల OBC ధృవీకరణ పత్రం"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "School Certificate",
+            "te": "పాఠశాల ధృవీకరణ పత్రం"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "15-20 Days",
+      "is_revenue": true,
+      "description_simple": {
+        "en": "Certificate for Other Backward Classes category, required for educational and employment reservations.",
+        "te": "ఇతర వెనుకబడిన తరగతుల వర్గం కోసం ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'OBC Certificate' service",
+          "Fill application with family details",
+          "Upload parent's OBC certificate",
+          "Pay ₹62 fee",
+          "Track application online"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "OBC ధృవీకరణ పత్రం సేవను ఎంచుకోండి",
+          "కుటుంబ వివరాలతో దరఖాస్తు నింపండి",
+          "తల్లిదండ్రుల OBC ధృవీకరణ పత్రాన్ని అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తును ఆన్‌లైన్‌లో ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Parent's OBC certificate is mandatory",
+          "Non-creamy layer certificate may be required separately",
+          "Processing takes longer during admission season",
+          "Ensure caste name matches official list"
+        ],
+        "te": [
+          "తల్లిదండ్రుల OBC ధృవీకరణ పత్రం తప్పనిసరి",
+          "నాన్-క్రీమీ లేయర్ ధృవీకరణ పత్రం విడిగా అవసరం కావచ్చు",
+          "అడ్మిషన్ సీజన్‌లో ప్రాసెసింగ్ ఎక్కువ సమయం పడుతుంది",
+          "కులం పేరు అధికారిక జాబితాతో సరిపోలుతుందో నిర్ధారించుకోండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 6
+    },
+    {
+      "service_id": "POL-001",
+      "name": {
+        "en": "Character Certificate",
+        "te": "పాత్ర ధృవీకరణ పత్రం"
+      },
+      "department": "Police",
+      "category": "E-Pass",
+      "keywords": [
+        "character",
+        "police",
+        "verification",
+        "పాత్ర"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
           },
           "type": "copy",
           "mandatory": true
@@ -581,20 +704,28 @@
             "en": "Address Proof",
             "te": "చిరునామా రుజువు"
           },
-          "type": "self_attested",
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Passport Size Photos",
+            "te": "పాస్‌పోర్ట్ సైజ్ ఫోటోలు"
+          },
+          "type": "original",
           "mandatory": true
         }
       ],
-      "processing_time": "1-3 Days",
+      "processing_time": "15-30 Days",
       "is_revenue": false,
       "description_simple": {
-        "en": "Temporary license for learning to drive before obtaining permanent license.",
-        "te": "శాశ్వత లైసెన్స్ పొందే ముందు డ్రైవింగ్ నేర్చుకోవడానికి తాత్కాలిక లైసెన్స్."
+        "en": "Police verification certificate confirming no criminal record, required for employment, visa applications, and educational purposes.",
+        "te": "నేర రికార్డు లేదని ధృవీకరించే పోలీసు ధృవీకరణ పత్రం."
       },
       "submission_modes": {
         "online": {
           "available": true,
-          "portal_url": "https://parivahan.gov.in/parivahan",
+          "portal_url": "https://meeseva.telangana.gov.in",
           "requires_digital_signature": false
         },
         "meeseva_center": {
@@ -603,13 +734,1166 @@
           "stamp_value": 0
         }
       },
-      "priority_rank": 11,
-      "related_services": [
-        "TRA-001"
-      ]
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Character Certificate' service",
+          "Fill personal and address details",
+          "Upload required documents",
+          "Pay ₹35 fee",
+          "Police verification will be conducted at your address"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "పాత్ర ధృవీకరణ పత్రం సేవను ఎంచుకోండి",
+          "వ్యక్తిగత మరియు చిరునామా వివరాలను నింపండి",
+          "అవసరమైన పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "మీ చిరునామా వద్ద పోలీసు ధృవీకరణ నిర్వహించబడుతుంది"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Police will visit your address for verification",
+          "Processing time varies based on police workload",
+          "Ensure you're available at given address",
+          "Required for passport and visa applications"
+        ],
+        "te": [
+          "ధృవీకరణ కోసం పోలీసులు మీ చిరునామాను సందర్శిస్తారు",
+          "పోలీసు పనిభారం ఆధారంగా ప్రాసెసింగ్ సమయం మారుతుంది",
+          "ఇచ్చిన చిరునామా వద్ద మీరు అందుబాటులో ఉండేలా చూసుకోండి",
+          "పాస్‌పోర్ట్ మరియు వీసా దరఖాస్తులకు అవసరం"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 7
     },
     {
-      "service_id": "TRA-003",
+      "service_id": "REV-005",
+      "name": {
+        "en": "Encumbrance Certificate",
+        "te": "ఎన్‌కంబ్రెన్స్ ధృవీకరణ పత్రం"
+      },
+      "department": "Revenue",
+      "category": "A",
+      "keywords": [
+        "encumbrance",
+        "property",
+        "ec",
+        "land"
+      ],
+      "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Property Documents",
+            "te": "ఆస్తి పత్రాలు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Survey Number Details",
+            "te": "సర్వే నంబర్ వివరాలు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "7-10 Days",
+      "is_revenue": true,
+      "description_simple": {
+        "en": "Certificate showing property transaction history and confirming no legal dues, essential for property sales and loans.",
+        "te": "ఆస్తి లావాదేవీ చరిత్రను చూపించే మరియు చట్టపరమైన బకాయిలు లేవని ధృవీకరించే పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Encumbrance Certificate' service",
+          "Enter property survey number and period",
+          "Upload property documents",
+          "Pay ₹62 fee",
+          "Receive EC with transaction history"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "ఎన్‌కంబ్రెన్స్ ధృవీకరణ పత్రం సేవను ఎంచుకోండి",
+          "ఆస్తి సర్వే నంబర్ మరియు కాలాన్ని నమోదు చేయండి",
+          "ఆస్తి పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "లావాదేవీ చరిత్రతో EC స్వీకరించండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Specify the period for which EC is required",
+          "Essential for property purchase and bank loans",
+          "Verify survey number before applying",
+          "Keep property documents ready"
+        ],
+        "te": [
+          "EC అవసరమైన కాలాన్ని పేర్కొనండి",
+          "ఆస్తి కొనుగోలు మరియు బ్యాంక్ రుణాలకు అవసరం",
+          "దరఖాస్తు చేసే ముందు సర్వే నంబర్‌ను ధృవీకరించండి",
+          "ఆస్తి పత్రాలను సిద్ధంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 8
+    },
+    {
+      "service_id": "MUN-003",
+      "name": {
+        "en": "Marriage Certificate",
+        "te": "వివాహ ధృవీకరణ పత్రం"
+      },
+      "department": "Municipal",
+      "category": "B",
+      "keywords": [
+        "marriage",
+        "wedding"
+      ],
+      "fee": 80,
+      "fee_breakdown": {
+        "service_fee": 65,
+        "meeseva_charge": 15,
+        "total": 80
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Marriage Invitation",
+            "te": "వివాహ ఆహ్వానం"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Bride & Groom Aadhaar",
+            "te": "వధూవరుల ఆధార్"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "7-10 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Official marriage registration certificate for legal purposes.",
+        "te": "వివాహ నమోదు ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Marriage Certificate' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹80 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 9
+    },
+    {
+      "service_id": "TRA-001",
+      "name": {
+        "en": "Driving License",
+        "te": "డ్రైవింగ్ లైసెన్స్"
+      },
+      "department": "Transport",
+      "category": "B",
+      "keywords": [
+        "driving",
+        "license",
+        "dl"
+      ],
+      "fee": 80,
+      "fee_breakdown": {
+        "service_fee": 65,
+        "meeseva_charge": 15,
+        "total": 80
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Learner's License",
+            "te": "లెర్నర్స్ లైసెన్స్"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "15-20 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Permanent driving license for operating motor vehicles.",
+        "te": "మోటార్ వాహనాలను నడపడానికి లైసెన్స్."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Driving License' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹80 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 10
+    },
+    {
+      "service_id": "CIV-001",
+      "name": {
+        "en": "Ration Card",
+        "te": "రేషన్ కార్డు"
+      },
+      "department": "Civil Supplies",
+      "category": "E-Pass",
+      "keywords": [
+        "ration",
+        "card",
+        "food"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "30-45 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Ration card for subsidized food grains.",
+        "te": "రాయితీ ధరల ఆహార ధాన్యాల కోసం రేషన్ కార్డు."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Ration Card' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 11
+    },
+    {
+      "service_id": "REV-010",
+      "name": {
+        "en": "Pattadar Passbook",
+        "te": "పట్టాదార్ పాస్‌బుక్"
+      },
+      "department": "Revenue",
+      "category": "A",
+      "keywords": [
+        "pattadar",
+        "land",
+        "passbook"
+      ],
+      "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Land Documents",
+            "te": "భూమి పత్రాలు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Survey Number",
+            "te": "సర్వే నంబర్"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "15-20 Days",
+      "is_revenue": true,
+      "description_simple": {
+        "en": "Land ownership record book.",
+        "te": "భూమి యాజమాన్య రికార్డు పుస్తకం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Pattadar Passbook' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹62 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 12
+    },
+    {
+      "service_id": "HEA-001",
+      "name": {
+        "en": "Health Card",
+        "te": "ఆరోగ్య కార్డు"
+      },
+      "department": "Health",
+      "category": "E-Pass",
+      "keywords": [
+        "health",
+        "medical",
+        "card"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "7-10 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Health card for free medical treatment.",
+        "te": "ఉచిత వైద్య చికిత్స కోసం ఆరోగ్య కార్డు."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Health Card' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 13
+    },
+    {
+      "service_id": "EDU-001",
+      "name": {
+        "en": "School Transfer Certificate",
+        "te": "పాఠశాల TC"
+      },
+      "department": "Education",
+      "category": "E-Pass",
+      "keywords": [
+        "school",
+        "transfer",
+        "tc"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Student Aadhaar",
+            "te": "విద్యార్థి ఆధార్"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "School Records",
+            "te": "పాఠశాల రికార్డులు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "3-5 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Transfer certificate for changing schools.",
+        "te": "పాఠశాలలు మారడానికి TC."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'School Transfer Certificate' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 14
+    },
+    {
+      "service_id": "AGR-001",
+      "name": {
+        "en": "Farmer Registration",
+        "te": "రైతు నమోదు"
+      },
+      "department": "Agriculture",
+      "category": "E-Pass",
+      "keywords": [
+        "farmer",
+        "agriculture"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Land Documents",
+            "te": "భూమి పత్రాలు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "7-10 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Registration for agricultural schemes.",
+        "te": "వ్యవసాయ పథకాల కోసం నమోదు."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Farmer Registration' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 15
+    },
+    {
+      "service_id": "LAB-001",
+      "name": {
+        "en": "Labour Card",
+        "te": "కార్మిక కార్డు"
+      },
+      "department": "Labour",
+      "category": "E-Pass",
+      "keywords": [
+        "labour",
+        "worker",
+        "card"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Employment Proof",
+            "te": "ఉద్యోగ రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "15-20 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Card for unorganized sector workers.",
+        "te": "అసంఘటిత రంగ కార్మికుల కార్డు."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Labour Card' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 16
+    },
+    {
+      "service_id": "PAN-001",
+      "name": {
+        "en": "Panchayat Certificate",
+        "te": "పంచాయతీ ధృవీకరణ పత్రం"
+      },
+      "department": "Panchayat Raj",
+      "category": "E-Pass",
+      "keywords": [
+        "panchayat",
+        "village"
+      ],
+      "fee": 35,
+      "fee_breakdown": {
+        "service_fee": 25,
+        "meeseva_charge": 10,
+        "total": 35
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Aadhaar Card",
+            "te": "ఆధార్ కార్డు"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "7-10 Days",
+      "is_revenue": false,
+      "description_simple": {
+        "en": "Certificate from village panchayat.",
+        "te": "గ్రామ పంచాయతీ ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": false,
+          "stamp_value": 0
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Panchayat Certificate' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹35 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 17
+    },
+    {
+      "service_id": "REV-011",
+      "name": {
+        "en": "Name Change Certificate",
+        "te": "పేరు మార్పు ధృవీకరణ పత్రం"
+      },
+      "department": "Revenue",
+      "category": "A",
+      "keywords": [
+        "name",
+        "change"
+      ],
+      "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Gazette Notification",
+            "te": "గెజిట్ నోటిఫికేషన్"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Affidavit",
+            "te": "అఫిడవిట్"
+          },
+          "type": "original",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "15-20 Days",
+      "is_revenue": true,
+      "description_simple": {
+        "en": "Certificate for legal name change.",
+        "te": "చట్టబద్ధమైన పేరు మార్పు ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Name Change Certificate' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹62 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 18
+    },
+    {
+      "service_id": "REV-012",
+      "name": {
+        "en": "Legal Heir Certificate",
+        "te": "చట్టబద్ధ వారసుడు ధృవీకరణ పత్రం"
+      },
+      "department": "Revenue",
+      "category": "A",
+      "keywords": [
+        "legal",
+        "heir"
+      ],
+      "fee": 62,
+      "fee_breakdown": {
+        "service_fee": 50,
+        "meeseva_charge": 12,
+        "total": 62
+      },
+      "required_documents": [
+        {
+          "name": {
+            "en": "Death Certificate",
+            "te": "మరణ ధృవీకరణ పత్రం"
+          },
+          "type": "copy",
+          "mandatory": true
+        },
+        {
+          "name": {
+            "en": "Family Aadhaar",
+            "te": "కుటుంబ ఆధార్"
+          },
+          "type": "copy",
+          "mandatory": true
+        }
+      ],
+      "processing_time": "20-30 Days",
+      "is_revenue": true,
+      "description_simple": {
+        "en": "Certificate identifying legal heirs.",
+        "te": "చట్టబద్ధ వారసులను గుర్తించే ధృవీకరణ పత్రం."
+      },
+      "submission_modes": {
+        "online": {
+          "available": true,
+          "portal_url": "https://meeseva.telangana.gov.in",
+          "requires_digital_signature": false
+        },
+        "meeseva_center": {
+          "available": true,
+          "requires_stamp": true,
+          "stamp_value": 2
+        }
+      },
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Legal Heir Certificate' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹62 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
+      },
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
+      },
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
+      },
+      "priority_rank": 19
+    },
+    {
+      "service_id": "TRA-002",
       "name": {
         "en": "Vehicle Registration",
         "te": "వాహన నమోదు"
@@ -617,17 +1901,21 @@
       "department": "Transport",
       "category": "B",
       "keywords": [
-        "vehicle registration",
-        "RC",
-        "వాహన నమోదు",
-        "ఆర్సీ"
+        "vehicle",
+        "registration",
+        "rc"
       ],
       "fee": 80,
+      "fee_breakdown": {
+        "service_fee": 65,
+        "meeseva_charge": 15,
+        "total": 80
+      },
       "required_documents": [
         {
           "name": {
-            "en": "Invoice/Bill of Sale",
-            "te": "ఇన్వాయిస్/అమ్మకపు బిల్లు"
+            "en": "Purchase Invoice",
+            "te": "కొనుగోలు ఇన్‌వాయిస్"
           },
           "type": "original",
           "mandatory": true
@@ -641,16 +1929,16 @@
           "mandatory": true
         }
       ],
-      "processing_time": "7-15 Days",
+      "processing_time": "15-20 Days",
       "is_revenue": false,
       "description_simple": {
-        "en": "Registration of new vehicle with RTO for legal road use.",
-        "te": "చట్టబద్ధ రహదారి వినియోగం కోసం RTO తో కొత్త వాహన నమోదు."
+        "en": "Registration for new vehicles.",
+        "te": "కొత్త వాహనాల నమోదు."
       },
       "submission_modes": {
         "online": {
           "available": true,
-          "portal_url": "https://parivahan.gov.in/parivahan",
+          "portal_url": "https://meeseva.telangana.gov.in",
           "requires_digital_signature": false
         },
         "meeseva_center": {
@@ -659,463 +1947,54 @@
           "stamp_value": 0
         }
       },
-      "priority_rank": 12,
-      "related_services": []
-    },
-    {
-      "service_id": "TRA-004",
-      "name": {
-        "en": "Vehicle Transfer",
-        "te": "వాహన బదిలీ"
+      "steps": {
+        "en": [
+          "Visit MeeSeva portal or center",
+          "Select 'Vehicle Registration' service",
+          "Fill required details",
+          "Upload documents",
+          "Pay ₹80 fee",
+          "Track application status"
+        ],
+        "te": [
+          "మీసేవా పోర్టల్ లేదా కేంద్రాన్ని సందర్శించండి",
+          "సేవను ఎంచుకోండి",
+          "అవసరమైన వివరాలను నింపండి",
+          "పత్రాలను అప్‌లోడ్ చేయండి",
+          "రుసుము చెల్లించండి",
+          "దరఖాస్తు స్థితిని ట్రాక్ చేయండి"
+        ]
       },
-      "department": "Transport",
-      "category": "A",
-      "keywords": [
-        "vehicle transfer",
-        "ownership transfer",
-        "వాహన బదిలీ",
-        "యాజమాన్య బదిలీ"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Original RC",
-            "te": "అసలు ఆర్సీ"
-          },
-          "type": "original",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Sale Agreement",
-            "te": "అమ్మకపు ఒప్పందం"
-          },
-          "type": "original",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "7-15 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Transfer of vehicle ownership from seller to buyer.",
-        "te": "అమ్మకందారు నుండి కొనుగోలుదారుకు వాహన యాజమాన్యం బదిలీ."
+      "important_notes": {
+        "en": [
+          "Ensure all documents are clear",
+          "Carry original documents for verification",
+          "Double-check all details before submission",
+          "Keep acknowledgement receipt safe"
+        ],
+        "te": [
+          "అన్ని పత్రాలు స్పష్టంగా ఉన్నాయో నిర్ధారించుకోండి",
+          "ధృవీకరణ కోసం అసలు పత్రాలను తీసుకురండి",
+          "సమర్పణకు ముందు అన్ని వివరాలను తనిఖీ చేయండి",
+          "రసీదును సురక్షితంగా ఉంచండి"
+        ]
       },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://parivahan.gov.in/parivahan",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
+      "source_verification": {
+        "source": "MeeSeva Portal",
+        "last_verified": "2026-05-01"
       },
-      "priority_rank": 13,
-      "related_services": []
-    },
-    {
-      "service_id": "CIV-001",
-      "name": {
-        "en": "Ration Card - New Application",
-        "te": "రేషన్ కార్డు - కొత్త దరఖాస్తు"
-      },
-      "department": "Civil Supplies",
-      "category": "A",
-      "keywords": [
-        "ration card",
-        "food security",
-        "PDS",
-        "రేషన్ కార్డు"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Aadhar Card (all family members)",
-            "te": "ఆధార్ కార్డు (కుటుంబ సభ్యులందరూ)"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Address Proof",
-            "te": "చిరునామా రుజువు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "15-30 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "New ration card for accessing subsidized food grains through Public Distribution System.",
-        "te": "పబ్లిక్ డిస్ట్రిబ్యూషన్ సిస్టమ్ ద్వారా రాయితీ ధాన్యాలను పొందడానికి కొత్త రేషన్ కార్డు."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://epds.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 14,
-      "related_services": []
-    },
-    {
-      "service_id": "CIV-002",
-      "name": {
-        "en": "Ration Card - Modification",
-        "te": "రేషన్ కార్డు - సవరణ"
-      },
-      "department": "Civil Supplies",
-      "category": "A",
-      "keywords": [
-        "ration card modification",
-        "update ration card",
-        "రేషన్ కార్డు సవరణ"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Existing Ration Card",
-            "te": "ఇప్పటికే ఉన్న రేషన్ కార్డు"
-          },
-          "type": "original",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Supporting Documents for Change",
-            "te": "మార్పు కోసం సహాయక పత్రాలు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "7-15 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Modification of existing ration card for adding/removing family members or address change.",
-        "te": "కుటుంబ సభ్యులను జోడించడం/తొలగించడం లేదా చిరునామా మార్పు కోసం ఇప్పటికే ఉన్న రేషన్ కార్డు సవరణ."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://epds.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 15,
-      "related_services": [
-        "CIV-001"
-      ]
-    },
-    {
-      "service_id": "CIV-003",
-      "name": {
-        "en": "Gas Connection - New",
-        "te": "గ్యాస్ కనెక్షన్ - కొత్త"
-      },
-      "department": "Civil Supplies",
-      "category": "A",
-      "keywords": [
-        "gas connection",
-        "LPG",
-        "cooking gas",
-        "గ్యాస్ కనెక్షన్"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Aadhar Card",
-            "te": "ఆధార్ కార్డు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Address Proof",
-            "te": "చిరునామా రుజువు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "7-15 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "New LPG gas connection for domestic cooking purposes.",
-        "te": "గృహ వంట ప్రయోజనాల కోసం కొత్త LPG గ్యాస్ కనెక్షన్."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://www.bharatgas.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 16,
-      "related_services": []
-    },
-    {
-      "service_id": "POL-001",
-      "name": {
-        "en": "Police Clearance Certificate",
-        "te": "పోలీసు క్లియరెన్స్ సర్టిఫికేట్"
-      },
-      "department": "Police",
-      "category": "A",
-      "keywords": [
-        "police clearance",
-        "PCC",
-        "character certificate",
-        "పోలీసు క్లియరెన్స్"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Aadhar Card",
-            "te": "ఆధార్ కార్డు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Address Proof",
-            "te": "చిరునామా రుజువు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "15-30 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Certificate verifying no criminal record, required for employment and visa applications.",
-        "te": "నేర రికార్డు లేదని ధృవీకరించే ధృవీకరణ పత్రం, ఉద్యోగం మరియు వీసా దరఖాస్తుల కోసం అవసరం."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://tspolice.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 17,
-      "related_services": []
-    },
-    {
-      "service_id": "POL-002",
-      "name": {
-        "en": "Passport Verification",
-        "te": "పాస్‌పోర్ట్ ధృవీకరణ"
-      },
-      "department": "Police",
-      "category": "A",
-      "keywords": [
-        "passport verification",
-        "police verification",
-        "పాస్‌పోర్ట్ ధృవీకరణ"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Passport Application Copy",
-            "te": "పాస్‌పోర్ట్ దరఖాస్తు కాపీ"
-          },
-          "type": "copy",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Address Proof",
-            "te": "చిరునామా రుజువు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "7-15 Days",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Police verification required for passport issuance and renewal.",
-        "te": "పాస్‌పోర్ట్ జారీ మరియు పునరుద్ధరణ కోసం అవసరమైన పోలీసు ధృవీకరణ."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://tspolice.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 18,
-      "related_services": [
-        "POL-001"
-      ]
-    },
-    {
-      "service_id": "POL-003",
-      "name": {
-        "en": "Lost Report Registration",
-        "te": "కోల్పోయిన నివేదిక నమోదు"
-      },
-      "department": "Police",
-      "category": "A",
-      "keywords": [
-        "lost report",
-        "FIR",
-        "missing items",
-        "కోల్పోయిన నివేదిక"
-      ],
-      "fee": 62,
-      "required_documents": [
-        {
-          "name": {
-            "en": "ID Proof",
-            "te": "గుర్తింపు రుజువు"
-          },
-          "type": "self_attested",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Details of Lost Items",
-            "te": "కోల్పోయిన వస్తువుల వివరాలు"
-          },
-          "type": "written",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "Instant",
-      "is_revenue": false,
-      "description_simple": {
-        "en": "Registration of lost documents, mobile phones, or other valuable items.",
-        "te": "కోల్పోయిన పత్రాలు, మొబైల్ ఫోన్లు లేదా ఇతర విలువైన వస్తువుల నమోదు."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://tspolice.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": false,
-          "stamp_value": 0
-        }
-      },
-      "priority_rank": 19,
-      "related_services": []
-    },
-    {
-      "service_id": "REV-006",
-      "name": {
-        "en": "Land Conversion",
-        "te": "భూమి మార్పిడి"
-      },
-      "department": "Revenue",
-      "category": "B",
-      "keywords": [
-        "land conversion",
-        "agricultural to residential",
-        "భూమి మార్పిడి"
-      ],
-      "fee": 80,
-      "required_documents": [
-        {
-          "name": {
-            "en": "Land Documents",
-            "te": "భూమి పత్రాలు"
-          },
-          "type": "original",
-          "mandatory": true
-        },
-        {
-          "name": {
-            "en": "Survey Documents",
-            "te": "సర్వే పత్రాలు"
-          },
-          "type": "copy",
-          "mandatory": true
-        }
-      ],
-      "processing_time": "30-60 Days",
-      "is_revenue": true,
-      "description_simple": {
-        "en": "Conversion of agricultural land to residential or commercial use.",
-        "te": "వ్యవసాయ భూమిని నివాస లేదా వాణిజ్య వినియోగానికి మార్చడం."
-      },
-      "submission_modes": {
-        "online": {
-          "available": true,
-          "portal_url": "https://registration.telangana.gov.in",
-          "requires_digital_signature": false
-        },
-        "meeseva_center": {
-          "available": true,
-          "requires_stamp": true,
-          "stamp_value": 2
-        }
-      },
-      "priority_rank": 20,
-      "related_services": [
-        "REV-001"
-      ]
+      "priority_rank": 20
     }
   ],
   "change_log": [
     {
-      "timestamp": "2026-05-02T06:18:29.331442Z",
+      "timestamp": "2026-05-02T11:50:00Z",
       "service_id": "REV-001",
-      "field_changed": "fee",
-      "old_value": 62,
-      "new_value": 65,
-      "source": "https://registration.telangana.gov.in",
-      "verified_by": "scout_agent.py"
-    },
-    {
-      "timestamp": "2026-05-02T06:18:29.331452Z",
-      "service_id": "MUN-001",
-      "field_changed": "processing_time",
-      "old_value": "Instant",
-      "new_value": "Instant",
-      "source": "https://ghmc.gov.in",
-      "verified_by": "scout_agent.py"
+      "field_changed": "schema_upgrade",
+      "old_value": "basic_structure",
+      "new_value": "enhanced_ux_structure",
+      "source": "manual_update",
+      "verified_by": "Bob"
     }
   ]
 }
