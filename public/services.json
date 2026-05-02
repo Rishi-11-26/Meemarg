@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-05-01T12:20:00Z",
+    "last_updated": "2026-05-02T06:18:29.331455Z",
     "total_services": 20,
     "rate_revision_date": "2026-04-01",
     "data_source": "Telangana State Portal & Official Gazette"
@@ -15,16 +15,31 @@
       },
       "department": "Revenue",
       "category": "A",
-      "keywords": ["EC", "encumbrance", "property", "land", "certificate", "no dues", "భారము", "సర్టిఫికేట్"],
-      "fee": 62,
+      "keywords": [
+        "EC",
+        "encumbrance",
+        "property",
+        "land",
+        "certificate",
+        "no dues",
+        "భారము",
+        "సర్టిఫికేట్"
+      ],
+      "fee": 65,
       "required_documents": [
         {
-          "name": {"en": "Property Document", "te": "ఆస్తి పత్రం"},
+          "name": {
+            "en": "Property Document",
+            "te": "ఆస్తి పత్రం"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Applicant ID Proof", "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"},
+          "name": {
+            "en": "Applicant ID Proof",
+            "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -48,7 +63,9 @@
         }
       },
       "priority_rank": 1,
-      "related_services": ["REV-002"]
+      "related_services": [
+        "REV-002"
+      ]
     },
     {
       "service_id": "REV-002",
@@ -58,16 +75,29 @@
       },
       "department": "Revenue",
       "category": "A",
-      "keywords": ["birth", "birth certificate", "newborn", "registration", "జననం", "పుట్టిన తేదీ"],
+      "keywords": [
+        "birth",
+        "birth certificate",
+        "newborn",
+        "registration",
+        "జననం",
+        "పుట్టిన తేదీ"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Hospital Discharge Summary", "te": "ఆసుపత్రి డిశ్చార్జ్ సారాంశం"},
+          "name": {
+            "en": "Hospital Discharge Summary",
+            "te": "ఆసుపత్రి డిశ్చార్జ్ సారాంశం"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Parents Aadhar Cards", "te": "తల్లిదండ్రుల ఆధార్ కార్డులు"},
+          "name": {
+            "en": "Parents Aadhar Cards",
+            "te": "తల్లిదండ్రుల ఆధార్ కార్డులు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -91,7 +121,9 @@
         }
       },
       "priority_rank": 2,
-      "related_services": ["REV-001"]
+      "related_services": [
+        "REV-001"
+      ]
     },
     {
       "service_id": "REV-003",
@@ -101,16 +133,27 @@
       },
       "department": "Revenue",
       "category": "A",
-      "keywords": ["death", "death certificate", "మరణం", "మరణ సర్టిఫికేట్"],
+      "keywords": [
+        "death",
+        "death certificate",
+        "మరణం",
+        "మరణ సర్టిఫికేట్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Hospital Death Summary", "te": "ఆసుపత్రి మరణ సారాంశం"},
+          "name": {
+            "en": "Hospital Death Summary",
+            "te": "ఆసుపత్రి మరణ సారాంశం"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Applicant ID Proof", "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"},
+          "name": {
+            "en": "Applicant ID Proof",
+            "te": "దరఖాస్తుదారు గుర్తింపు రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -144,16 +187,29 @@
       },
       "department": "Revenue",
       "category": "A",
-      "keywords": ["caste", "SC", "ST", "BC", "కులం", "కుల సర్టిఫికేట్"],
+      "keywords": [
+        "caste",
+        "SC",
+        "ST",
+        "BC",
+        "కులం",
+        "కుల సర్టిఫికేట్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Parent's Caste Certificate", "te": "తల్లిదండ్రుల కుల సర్టిఫికేట్"},
+          "name": {
+            "en": "Parent's Caste Certificate",
+            "te": "తల్లిదండ్రుల కుల సర్టిఫికేట్"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Aadhar Card", "te": "ఆధార్ కార్డు"},
+          "name": {
+            "en": "Aadhar Card",
+            "te": "ఆధార్ కార్డు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -187,16 +243,27 @@
       },
       "department": "Revenue",
       "category": "A",
-      "keywords": ["income", "income certificate", "ఆదాయం", "ఆదాయ సర్టిఫికేట్"],
+      "keywords": [
+        "income",
+        "income certificate",
+        "ఆదాయం",
+        "ఆదాయ సర్టిఫికేట్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Salary Slips / Income Proof", "te": "జీతం స్లిప్పులు / ఆదాయ రుజువు"},
+          "name": {
+            "en": "Salary Slips / Income Proof",
+            "te": "జీతం స్లిప్పులు / ఆదాయ రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Aadhar Card", "te": "ఆధార్ కార్డు"},
+          "name": {
+            "en": "Aadhar Card",
+            "te": "ఆధార్ కార్డు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -230,11 +297,20 @@
       },
       "department": "Municipal",
       "category": "A",
-      "keywords": ["property tax", "house tax", "municipal tax", "GHMC", "ఆస్తి పన్ను"],
+      "keywords": [
+        "property tax",
+        "house tax",
+        "municipal tax",
+        "GHMC",
+        "ఆస్తి పన్ను"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Property Tax Assessment Number", "te": "ఆస్తి పన్ను అంచనా సంఖ్య"},
+          "name": {
+            "en": "Property Tax Assessment Number",
+            "te": "ఆస్తి పన్ను అంచనా సంఖ్య"
+          },
           "type": "digital",
           "mandatory": true
         }
@@ -268,16 +344,27 @@
       },
       "department": "Municipal",
       "category": "B",
-      "keywords": ["trade license", "business license", "వాణిజ్య లైసెన్స్", "వ్యాపార లైసెన్స్"],
+      "keywords": [
+        "trade license",
+        "business license",
+        "వాణిజ్య లైసెన్స్",
+        "వ్యాపార లైసెన్స్"
+      ],
       "fee": 80,
       "required_documents": [
         {
-          "name": {"en": "Shop/Establishment Proof", "te": "దుకాణం/స్థాపన రుజువు"},
+          "name": {
+            "en": "Shop/Establishment Proof",
+            "te": "దుకాణం/స్థాపన రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Owner ID Proof", "te": "యజమాని గుర్తింపు రుజువు"},
+          "name": {
+            "en": "Owner ID Proof",
+            "te": "యజమాని గుర్తింపు రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -311,16 +398,27 @@
       },
       "department": "Municipal",
       "category": "B",
-      "keywords": ["building permission", "construction", "భవన అనుమతి", "నిర్మాణం"],
+      "keywords": [
+        "building permission",
+        "construction",
+        "భవన అనుమతి",
+        "నిర్మాణం"
+      ],
       "fee": 80,
       "required_documents": [
         {
-          "name": {"en": "Site Plan", "te": "స్థల ప్రణాళిక"},
+          "name": {
+            "en": "Site Plan",
+            "te": "స్థల ప్రణాళిక"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Property Documents", "te": "ఆస్తి పత్రాలు"},
+          "name": {
+            "en": "Property Documents",
+            "te": "ఆస్తి పత్రాలు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -354,16 +452,27 @@
       },
       "department": "Municipal",
       "category": "A",
-      "keywords": ["water connection", "water supply", "నీటి కనెక్షన్", "నీటి సరఫరా"],
+      "keywords": [
+        "water connection",
+        "water supply",
+        "నీటి కనెక్షన్",
+        "నీటి సరఫరా"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Property Tax Receipt", "te": "ఆస్తి పన్ను రసీదు"},
+          "name": {
+            "en": "Property Tax Receipt",
+            "te": "ఆస్తి పన్ను రసీదు"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Owner ID Proof", "te": "యజమాని గుర్తింపు రుజువు"},
+          "name": {
+            "en": "Owner ID Proof",
+            "te": "యజమాని గుర్తింపు రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -397,16 +506,27 @@
       },
       "department": "Transport",
       "category": "A",
-      "keywords": ["driving license", "DL renewal", "license renewal", "డ్రైవింగ్ లైసెన్స్"],
+      "keywords": [
+        "driving license",
+        "DL renewal",
+        "license renewal",
+        "డ్రైవింగ్ లైసెన్స్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Existing Driving License", "te": "ఇప్పటికే ఉన్న డ్రైవింగ్ లైసెన్స్"},
+          "name": {
+            "en": "Existing Driving License",
+            "te": "ఇప్పటికే ఉన్న డ్రైవింగ్ లైసెన్స్"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Medical Certificate", "te": "వైద్య ధృవీకరణ పత్రం"},
+          "name": {
+            "en": "Medical Certificate",
+            "te": "వైద్య ధృవీకరణ పత్రం"
+          },
           "type": "original",
           "mandatory": true
         }
@@ -440,16 +560,27 @@
       },
       "department": "Transport",
       "category": "A",
-      "keywords": ["learner license", "LL", "learning license", "లెర్నర్స్ లైసెన్స్"],
+      "keywords": [
+        "learner license",
+        "LL",
+        "learning license",
+        "లెర్నర్స్ లైసెన్స్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Age Proof", "te": "వయస్సు రుజువు"},
+          "name": {
+            "en": "Age Proof",
+            "te": "వయస్సు రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Address Proof", "te": "చిరునామా రుజువు"},
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -473,7 +604,9 @@
         }
       },
       "priority_rank": 11,
-      "related_services": ["TRA-001"]
+      "related_services": [
+        "TRA-001"
+      ]
     },
     {
       "service_id": "TRA-003",
@@ -483,16 +616,27 @@
       },
       "department": "Transport",
       "category": "B",
-      "keywords": ["vehicle registration", "RC", "వాహన నమోదు", "ఆర్సీ"],
+      "keywords": [
+        "vehicle registration",
+        "RC",
+        "వాహన నమోదు",
+        "ఆర్సీ"
+      ],
       "fee": 80,
       "required_documents": [
         {
-          "name": {"en": "Invoice/Bill of Sale", "te": "ఇన్వాయిస్/అమ్మకపు బిల్లు"},
+          "name": {
+            "en": "Invoice/Bill of Sale",
+            "te": "ఇన్వాయిస్/అమ్మకపు బిల్లు"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Insurance Certificate", "te": "బీమా ధృవీకరణ పత్రం"},
+          "name": {
+            "en": "Insurance Certificate",
+            "te": "బీమా ధృవీకరణ పత్రం"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -526,16 +670,27 @@
       },
       "department": "Transport",
       "category": "A",
-      "keywords": ["vehicle transfer", "ownership transfer", "వాహన బదిలీ", "యాజమాన్య బదిలీ"],
+      "keywords": [
+        "vehicle transfer",
+        "ownership transfer",
+        "వాహన బదిలీ",
+        "యాజమాన్య బదిలీ"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Original RC", "te": "అసలు ఆర్సీ"},
+          "name": {
+            "en": "Original RC",
+            "te": "అసలు ఆర్సీ"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Sale Agreement", "te": "అమ్మకపు ఒప్పందం"},
+          "name": {
+            "en": "Sale Agreement",
+            "te": "అమ్మకపు ఒప్పందం"
+          },
           "type": "original",
           "mandatory": true
         }
@@ -569,16 +724,27 @@
       },
       "department": "Civil Supplies",
       "category": "A",
-      "keywords": ["ration card", "food security", "PDS", "రేషన్ కార్డు"],
+      "keywords": [
+        "ration card",
+        "food security",
+        "PDS",
+        "రేషన్ కార్డు"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Aadhar Card (all family members)", "te": "ఆధార్ కార్డు (కుటుంబ సభ్యులందరూ)"},
+          "name": {
+            "en": "Aadhar Card (all family members)",
+            "te": "ఆధార్ కార్డు (కుటుంబ సభ్యులందరూ)"
+          },
           "type": "self_attested",
           "mandatory": true
         },
         {
-          "name": {"en": "Address Proof", "te": "చిరునామా రుజువు"},
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -612,16 +778,26 @@
       },
       "department": "Civil Supplies",
       "category": "A",
-      "keywords": ["ration card modification", "update ration card", "రేషన్ కార్డు సవరణ"],
+      "keywords": [
+        "ration card modification",
+        "update ration card",
+        "రేషన్ కార్డు సవరణ"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Existing Ration Card", "te": "ఇప్పటికే ఉన్న రేషన్ కార్డు"},
+          "name": {
+            "en": "Existing Ration Card",
+            "te": "ఇప్పటికే ఉన్న రేషన్ కార్డు"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Supporting Documents for Change", "te": "మార్పు కోసం సహాయక పత్రాలు"},
+          "name": {
+            "en": "Supporting Documents for Change",
+            "te": "మార్పు కోసం సహాయక పత్రాలు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -645,7 +821,9 @@
         }
       },
       "priority_rank": 15,
-      "related_services": ["CIV-001"]
+      "related_services": [
+        "CIV-001"
+      ]
     },
     {
       "service_id": "CIV-003",
@@ -655,16 +833,27 @@
       },
       "department": "Civil Supplies",
       "category": "A",
-      "keywords": ["gas connection", "LPG", "cooking gas", "గ్యాస్ కనెక్షన్"],
+      "keywords": [
+        "gas connection",
+        "LPG",
+        "cooking gas",
+        "గ్యాస్ కనెక్షన్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Aadhar Card", "te": "ఆధార్ కార్డు"},
+          "name": {
+            "en": "Aadhar Card",
+            "te": "ఆధార్ కార్డు"
+          },
           "type": "self_attested",
           "mandatory": true
         },
         {
-          "name": {"en": "Address Proof", "te": "చిరునామా రుజువు"},
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -698,16 +887,27 @@
       },
       "department": "Police",
       "category": "A",
-      "keywords": ["police clearance", "PCC", "character certificate", "పోలీసు క్లియరెన్స్"],
+      "keywords": [
+        "police clearance",
+        "PCC",
+        "character certificate",
+        "పోలీసు క్లియరెన్స్"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Aadhar Card", "te": "ఆధార్ కార్డు"},
+          "name": {
+            "en": "Aadhar Card",
+            "te": "ఆధార్ కార్డు"
+          },
           "type": "self_attested",
           "mandatory": true
         },
         {
-          "name": {"en": "Address Proof", "te": "చిరునామా రుజువు"},
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -741,16 +941,26 @@
       },
       "department": "Police",
       "category": "A",
-      "keywords": ["passport verification", "police verification", "పాస్‌పోర్ట్ ధృవీకరణ"],
+      "keywords": [
+        "passport verification",
+        "police verification",
+        "పాస్‌పోర్ట్ ధృవీకరణ"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "Passport Application Copy", "te": "పాస్‌పోర్ట్ దరఖాస్తు కాపీ"},
+          "name": {
+            "en": "Passport Application Copy",
+            "te": "పాస్‌పోర్ట్ దరఖాస్తు కాపీ"
+          },
           "type": "copy",
           "mandatory": true
         },
         {
-          "name": {"en": "Address Proof", "te": "చిరునామా రుజువు"},
+          "name": {
+            "en": "Address Proof",
+            "te": "చిరునామా రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         }
@@ -774,7 +984,9 @@
         }
       },
       "priority_rank": 18,
-      "related_services": ["POL-001"]
+      "related_services": [
+        "POL-001"
+      ]
     },
     {
       "service_id": "POL-003",
@@ -784,16 +996,27 @@
       },
       "department": "Police",
       "category": "A",
-      "keywords": ["lost report", "FIR", "missing items", "కోల్పోయిన నివేదిక"],
+      "keywords": [
+        "lost report",
+        "FIR",
+        "missing items",
+        "కోల్పోయిన నివేదిక"
+      ],
       "fee": 62,
       "required_documents": [
         {
-          "name": {"en": "ID Proof", "te": "గుర్తింపు రుజువు"},
+          "name": {
+            "en": "ID Proof",
+            "te": "గుర్తింపు రుజువు"
+          },
           "type": "self_attested",
           "mandatory": true
         },
         {
-          "name": {"en": "Details of Lost Items", "te": "కోల్పోయిన వస్తువుల వివరాలు"},
+          "name": {
+            "en": "Details of Lost Items",
+            "te": "కోల్పోయిన వస్తువుల వివరాలు"
+          },
           "type": "written",
           "mandatory": true
         }
@@ -827,16 +1050,26 @@
       },
       "department": "Revenue",
       "category": "B",
-      "keywords": ["land conversion", "agricultural to residential", "భూమి మార్పిడి"],
+      "keywords": [
+        "land conversion",
+        "agricultural to residential",
+        "భూమి మార్పిడి"
+      ],
       "fee": 80,
       "required_documents": [
         {
-          "name": {"en": "Land Documents", "te": "భూమి పత్రాలు"},
+          "name": {
+            "en": "Land Documents",
+            "te": "భూమి పత్రాలు"
+          },
           "type": "original",
           "mandatory": true
         },
         {
-          "name": {"en": "Survey Documents", "te": "సర్వే పత్రాలు"},
+          "name": {
+            "en": "Survey Documents",
+            "te": "సర్వే పత్రాలు"
+          },
           "type": "copy",
           "mandatory": true
         }
@@ -860,8 +1093,29 @@
         }
       },
       "priority_rank": 20,
-      "related_services": ["REV-001"]
+      "related_services": [
+        "REV-001"
+      ]
     }
   ],
-  "change_log": []
+  "change_log": [
+    {
+      "timestamp": "2026-05-02T06:18:29.331442Z",
+      "service_id": "REV-001",
+      "field_changed": "fee",
+      "old_value": 62,
+      "new_value": 65,
+      "source": "https://registration.telangana.gov.in",
+      "verified_by": "scout_agent.py"
+    },
+    {
+      "timestamp": "2026-05-02T06:18:29.331452Z",
+      "service_id": "MUN-001",
+      "field_changed": "processing_time",
+      "old_value": "Instant",
+      "new_value": "Instant",
+      "source": "https://ghmc.gov.in",
+      "verified_by": "scout_agent.py"
+    }
+  ]
 }
