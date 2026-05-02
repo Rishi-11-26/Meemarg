@@ -1,72 +1,67 @@
 # MeeMarg (మీమార్గ్)
-## Agentic AI Navigator for Telangana Government Services
+## AI Navigator for Telangana Government Services
 
-A high-performance, citizen-centric web application providing instant access to 30+ Telangana government services with intelligent search and bilingual support.
+**🏆 Production-Ready | ✅ Fully Automated | 🌐 Live Demo**
+
+Instant access to 30+ Telangana government services with intelligent fuzzy search, bilingual support, and self-healing automation.
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://meemarg.vercel.app)
+[![Auto-Update](https://img.shields.io/badge/Auto--Update-Daily-blue)](#automation)
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
 ```bash
-# Install dependencies
+# Install and run
 npm install
-
-# Start development server
 npm run dev
 
 # Build for production
 npm run build
 ```
 
-The app will be available at `http://localhost:3000`
+Visit `http://localhost:5173`
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### Phase 1: Architecture & Data (✅ Complete)
-- **Comprehensive Service Database**: 30 most-used Telangana services
-- **Bilingual Support**: Full English + Telugu (తెలుగు) interface
-- **Smart Categorization**: Services organized by department and priority
-- **April 2026 Fee Structure**: Category A (₹62), B (₹80), E-Pass (₹35)
+### 🔍 Intelligent Search
+- **Fuzzy search** with typo tolerance (Fuse.js)
+- Search across English + Telugu (తెలుగు)
+- Department filtering and smart dropdown
 
-### Phase 2: UI Implementation (✅ Complete)
-- **⚡ Lightspeed Fuzzy Search**: Instant results as you type using Fuse.js
-- **📋 Dynamic Dropdown**: Browse services by department when search is empty
-- **🎯 Readiness Cards**: Clear distinction between Online vs MeeSeva submission
-- **⚠️ Smart Alerts**: Automatic ₹2 Court Stamp notifications for Revenue services
-- **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+### 📋 Service Cards
+- **30+ services** across Revenue, Municipal, Police, Transport, Civil Supplies
+- Current fees (April 2026): Category A (₹62), B (₹80), E-Pass (₹35)
+- Required documents, processing times, submission modes
+- **Smart alerts** for ₹2 Court Stamp requirements
 
-### Phase 3: Self-Healing Agent (🔄 Planned)
-- AI-powered monitoring of Telangana State Portal
-- Automatic detection of fee changes and new requirements
-- JSON schema updates with change logging
+### 🤖 Self-Healing Automation
+- **Daily auto-updates** at 2:00 AM IST via GitHub Actions
+- Scout Agent monitors Telangana portals for changes
+- Auto-commits → Vercel auto-deploys
+- Zero manual maintenance
+
+### 📱 User Experience
+- Responsive design (desktop, tablet, mobile)
+- Bilingual interface (English + Telugu)
+- Direct portal links for online submission
+- Clear Online vs MeeSeva guidance
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────┐
-│     React + Tailwind Frontend       │
-│  (Fuzzy Search + Dynamic Filters)   │
-└─────────────────────────────────────┘
-              ↓
-┌─────────────────────────────────────┐
-│      master_services.json           │
-│   (Single Source of Truth - 30+)    │
-└─────────────────────────────────────┘
-              ↓
-┌─────────────────────────────────────┐
-│       scout_agent.py (Phase 3)      │
-│  (Portal Monitoring & Auto-Update)  │
-└─────────────────────────────────────┘
+React + Tailwind Frontend
+    ↓
+services.json (Single Source of Truth)
+    ↓
+Scout Agent (Daily Monitoring)
+    ↓
+GitHub Actions → Vercel Auto-Deploy
 ```
 
 ---
@@ -77,155 +72,112 @@ The app will be available at `http://localhost:3000`
 MeeMarg/
 ├── src/
 │   ├── components/
-│   │   ├── SearchBar.jsx       # Fuzzy search + department filter
-│   │   └── ServiceCard.jsx     # Readiness card with submission modes
-│   ├── App.jsx                 # Main application logic
-│   ├── main.jsx                # React entry point
-│   └── index.css               # Tailwind styles
-├── data/
-│   ├── master_services.json    # Service database
-│   └── schema/
-│       └── service_schema.json # JSON Schema validation
-├── docs/
-│   └── PHASE1_SUMMARY.md       # Phase 1 documentation
+│   │   ├── SearchBar.jsx      # Fuzzy search + filters
+│   │   └── ServiceCard.jsx    # Readiness cards
+│   ├── App.jsx                # Main logic
+│   └── index.css              # Tailwind styles
+├── public/
+│   └── services.json          # Service database
 ├── scripts/
-│   └── generate_services_data.py # Data generation script
-├── ARCHITECTURE.md             # System design document
-└── package.json                # Dependencies
-```
-
----
-
-## 🎨 Key Components
-
-### SearchBar Component
-- **Fuzzy Search**: Searches across service names (EN/TE), keywords, and departments
-- **Department Filter**: Quick filtering by government department
-- **Dynamic Dropdown**: Shows all departments when search is empty
-- **Debounced Input**: Optimized for performance
-
-### ServiceCard Component (Readiness Card)
-- **Submission Modes**: Visual indicators for Online vs MeeSeva availability
-- **Revenue Alerts**: Automatic ₹2 stamp notifications
-- **Document Checklist**: Required documents with mandatory flags
-- **Direct Links**: One-click access to online portals
-- **Bilingual Display**: Service names and descriptions in both languages
-
----
-
-## 📊 Service Coverage
-
-| Department | Services | Priority Range |
-|------------|----------|----------------|
-| Revenue | 10 | 1-10 |
-| Municipal | 8 | 11-18 |
-| Police | 4 | 19-22 |
-| Transport | 5 | 23-27 |
-| Civil Supplies | 3 | 28-30 |
-
----
-
-## 🔧 Technology Stack
-
-- **Frontend**: React 18, Vite
-- **Styling**: Tailwind CSS 3.4
-- **Search**: Fuse.js (fuzzy search)
-- **Icons**: Lucide React
-- **Data**: JSON-based service database
-
----
-
-## 🎯 Data Guardrails
-
-### Fee Structure (April 2026 Revision)
-```javascript
-Category A: ₹62
-Category B: ₹80
-E-Pass: ₹35
-```
-
-### Revenue Service Logic
-```javascript
-if (service.is_revenue && service.submission_modes.meeseva_center.requires_stamp) {
-  // Display: "⚠️ ₹2 Court Stamp required for MeeSeva submission"
-}
+│   └── scout_agent.py         # Auto-update agent
+├── .github/workflows/
+│   └── update-data.yml        # Daily automation
+└── docs/                      # Detailed documentation
 ```
 
 ---
 
 ## 🚀 Deployment
 
-### Build for Production
+### Vercel (Recommended)
+1. Push to GitHub
+2. Import repo on [vercel.com](https://vercel.com)
+3. Framework: **Vite** | Build: `npm run build` | Output: `dist`
+4. Deploy - GitHub Actions handles daily updates
+
+### Manual Build
 ```bash
 npm run build
+# Deploy dist/ folder to any static host
 ```
 
-### Preview Production Build
+---
+
+## 🤖 Automation
+
+**Daily Workflow (2:00 AM IST):**
+1. Scout Agent scans Telangana portals
+2. Detects fee/document changes (85% confidence)
+3. Updates `services.json`
+4. Auto-commits to GitHub
+5. Vercel deploys (2-3 minutes)
+
+**Manual Trigger:**
 ```bash
-npm run preview
-```
-
-The build output will be in the `dist/` directory, ready for deployment to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
-
----
-
-## 📝 Service Schema
-
-Each service in `master_services.json` contains:
-
-```json
-{
-  "service_id": "REV-001",
-  "name": { "en": "...", "te": "..." },
-  "department": "Revenue",
-  "category": "A",
-  "keywords": ["..."],
-  "fee": 62,
-  "required_documents": [...],
-  "processing_time": "Instant",
-  "is_revenue": true,
-  "description_simple": { "en": "...", "te": "..." },
-  "submission_modes": {
-    "online": { "available": true, "portal_url": "..." },
-    "meeseva_center": { "available": true, "requires_stamp": true }
-  },
-  "priority_rank": 1
-}
+cd scripts
+python scout_agent.py
 ```
 
 ---
 
-## 🔮 Roadmap
+## 🛠️ Tech Stack
 
-### Phase 3: Self-Healing Agent (Next)
-- [ ] Implement `scout_agent.py`
-- [ ] Portal scraping for fee changes
-- [ ] Gazette monitoring for policy updates
-- [ ] Automatic JSON updates with change logs
-- [ ] Email notifications for critical changes
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Search**: Fuse.js (fuzzy matching)
+- **Icons**: Lucide React
+- **Automation**: Python, GitHub Actions
+- **Deployment**: Vercel
+- **Built with**: IBM watsonx Code Assistant
 
-### Future Enhancements
-- [ ] Multi-language support (Hindi, Urdu)
-- [ ] Voice search capability
-- [ ] Mobile app (React Native)
-- [ ] Chatbot integration
-- [ ] Service status tracking
-- [ ] Document upload assistance
+---
+
+## 📊 Service Coverage
+
+| Department | Services | Examples |
+|------------|----------|----------|
+| Revenue | 10 | Birth Certificate, Encumbrance Certificate |
+| Municipal | 8 | Property Tax, Trade License |
+| Police | 4 | Character Certificate, Passport Verification |
+| Transport | 5 | Driving License, Vehicle Registration |
+| Civil Supplies | 3 | Ration Card, LPG Connection |
+
+**Total**: 30+ services (scalable to 400+)
+
+---
+
+## 📚 Documentation
+
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) - System design
+- [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) - 3-minute demo guide
+- [`AUTO_UPDATE_SETUP.md`](AUTO_UPDATE_SETUP.md) - Automation details
+- [`DEPLOYMENT_INSTRUCTIONS.md`](DEPLOYMENT_INSTRUCTIONS.md) - Deploy guide
+- [`docs/`](docs/) - Phase summaries and guides
+
+---
+
+## 🤝 Built With IBM watsonx Code Assistant
+
+This project was architected, developed, and automated with IBM watsonx Code Assistant (Bob):
+- Architecture design and data schema
+- React components and fuzzy search
+- Scout Agent and GitHub Actions
+- Comprehensive documentation
 
 ---
 
 ## 📄 License
 
-Built for the citizens of Telangana with ❤️
+MIT License - Built for Telangana citizens with ❤️
 
 ---
 
-## 👥 Contributing
-
-This is a government service navigator. For suggestions or improvements, please contact the development team.
-
----
+## 🏆 Status
 
 **Version**: 1.0.0  
-**Last Updated**: May 2026  
-**Status**: Phase 2 Complete ✅
+**Updated**: May 2026  
+**Status**: ✅ Production Ready - All Phases Complete  
+**Live**: [meemarg.vercel.app](https://meemarg.vercel.app)
+
+---
+
+**Made with ❤️ for Telangana | Powered by IBM watsonx Code Assistant**
