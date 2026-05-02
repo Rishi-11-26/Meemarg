@@ -1,0 +1,56 @@
+name: Auto-Update Service Data
+
+on:
+  schedule:
+    # Runs daily at 2:00 AM IST (8:30 PM UTC previous day)
+    - cron: '30 20 * * *'
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  update-services:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install Python dependencies
+        run: |
+          cd scripts
+          pip install -r requirements.txt
+      
+      - name: Run Scout Agent
+        run: |
+          cd scripts
+          python scout_agent.py
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet public/services.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add public/services.json
+          git commit -m "🤖 Auto-update: Service data updated on $(date +'%Y-%m-%d %H:%M:%S IST')"
+          git push
+      
+      - name: No changes detected
+        if: steps.check_changes.outputs.changes == 'false'
+        run: echo "✅ No changes detected in service data"
+
+# Made with Bob
