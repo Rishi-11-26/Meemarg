@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0.0",
-    "last_updated": "2026-05-15T21:33:04.359595Z",
+    "last_updated": "2026-05-16T21:09:22.913653Z",
     "total_services": 20,
     "rate_revision_date": "2026-04-01",
     "data_source": "Telangana State Portal & Official Gazette"
@@ -2223,6 +2223,24 @@
     },
     {
       "timestamp": "2026-05-15T21:33:04.359592Z",
+      "service_id": "MUN-001",
+      "field_changed": "processing_time",
+      "old_value": "Instant",
+      "new_value": "Instant",
+      "source": "https://ghmc.gov.in",
+      "verified_by": "scout_agent.py"
+    },
+    {
+      "timestamp": "2026-05-16T21:09:22.913638Z",
+      "service_id": "REV-001",
+      "field_changed": "fee",
+      "old_value": 65,
+      "new_value": 65,
+      "source": "https://registration.telangana.gov.in",
+      "verified_by": "scout_agent.py"
+    },
+    {
+      "timestamp": "2026-05-16T21:09:22.913651Z",
       "service_id": "MUN-001",
       "field_changed": "processing_time",
       "old_value": "Instant",
